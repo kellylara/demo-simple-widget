@@ -27,7 +27,8 @@ widgetSDK.init((event) => {
     return;
   }
 
-  const { inputdata } = widgetSDK.widgetInputs;
+  const { fieldname, email } = widgetSDK.widgetInputs;
 
-  sdkInputElement.innerHTML = inputdata;
+  sdkInputElement.innerHTML = fieldname;
+  inputElement.value = email;
 });
