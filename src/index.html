@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo Payment Widget</title>
+    <link rel="stylesheet" href="./src/global.css" />
   </head>
 
   <body>
     <div id="widget-container">
-      <div id="widget-input-data">Loading...</div>
-      <input id="input-field">
-      <button id="submit-button">Submit</button>
+      <form id="payment-form">
+        <label for="input-email">Email address</label>
+        <input id="input-email">
+        <label for="input-fake-cc">Credit card</label>
+        <input id="input-fake-cc">
+        <button id="submit-button">Pay Now</button>
       <div id="submit-message"></div>
+      </form>
     </div>
   </body>
 
